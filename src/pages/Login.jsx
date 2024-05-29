@@ -1,40 +1,46 @@
 import "../assets/Componets/Login.css";
-import "./Signup.jsx";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className="login-page">
-      <div className="login-page-child"></div>
-      <div className="login-parent">
-        <div className="login">Login</div>
-        <div className="login-wrapper">
-          <div className="dont-have-an">Login</div>
+    <div className="container">
+      <div className="left-side">
+        <div className="logo">
+          <img src="logo-head.png" alt="HelaiNusa" />
+          <h1>HelaiNusa.</h1>
         </div>
-        <div className="your-email-parent">
-          <div className="your-email">Your Email</div>
-          <div className="frame-child"></div>
-          <div className="your-email">Password</div>
-          <div className="frame-child"></div>
-          <div className="rectangle-parent">
-            <div className="frame-inner"></div>
-            <div className="i-agree-to-container">
-              <span>I agree to the </span>
-              <span className="privacy-policy">privacy policy</span>
+        <div className="welcome-text">
+          <h2>Login to Your Account</h2>
+          <button class="submit">
+            <Link to="/Signup">Don't have an account?</Link>
+          </button>
+        </div>
+      </div>
+      <div className="right-side">
+        <div className="login-box">
+          <h2>Login</h2>
+          <form>
+            <div className="input-group">
+              <label htmlFor="email">Email</label>
+              <input type="email" id="email" name="email" required />
             </div>
-          </div>
+            <div className="input-group">
+              <label htmlFor="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <div className="input-group">
+              <input type="checkbox" id="privacy-policy" />
+              <label htmlFor="privacy-policy">
+                I agree to the
+                <span className="privacy-policy">privacy policy</span>
+              </label>
+            </div>
+            <button class="next-login">
+              <Link to="/Productpage">Login</Link>
+              <link rel="stylesheet" href="" />
+            </button>
+          </form>
         </div>
-      </div>
-      <div className="login-to-your-account-parent">
-        <div className="login-to-your">Login to Your Account</div>
-        <div className="dont-have-an-account-wrapper">
-          <a href="/Signup">
-            <div className="dont-have-an">Don’t have an account?</div>
-          </a>
-        </div>
-      </div>
-      <div className="logo-parent">
-        <img className="logo-icon" alt="" src="/logo.png" />
-        <div className="i-agree-to-container">HelaiNusa.</div>
       </div>
     </div>
   );

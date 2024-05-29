@@ -1,213 +1,133 @@
-.sign-up-page-child {
-  position: absolute;
-  top: 3px;
-  left: 832px;
-  background-color: #fafcfe;
-  width: 608px;
-  height: 1021px;
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-.sign-up-page-item {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  background-color: #840001;
-  width: 832px;
-  height: 1024px;
-}
-.sign-up {
-  position: absolute;
-  top: 54px;
-  left: 171px;
-  font-size: 48px;
-}
-.input-label {
-  position: relative;
-}
-.input-label1 {
-  width: 166px;
-  position: relative;
-  display: inline-block;
-  flex-shrink: 0;
-}
-.input-label-wrapper {
-  border-radius: 14px;
-  border: 1px solid #1c1c1c;
+
+/* Global Styles */
+
+.container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 12px;
-  opacity: 0.5;
-  color: #fafcfe;
 }
-.input-field {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 10px;
-}
-.input-field-parent {
-  height: 82px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 20px;
-}
-.input-label-frame {
-  align-self: stretch;
-  border-radius: 14px;
-  border: 1px solid #1c1c1c;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 12px;
-  opacity: 0.5;
-  color: #fafcfe;
-}
-.input-field2 {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 10px;
-}
-.componentuicheckboxchecked-item {
-  position: absolute;
-  height: 81.82%;
-  width: 81.82%;
-  top: 9.09%;
-  right: 9.09%;
-  bottom: 9.09%;
-  left: 9.09%;
-  border-radius: 4px;
-  border: 2px solid #1c1c1c;
+
+.left-side1,
+.right-side1 {
+  flex: 1;
+  padding: 50px;
   box-sizing: border-box;
 }
-.checkbox-off {
-  position: absolute;
-  height: 100%;
+
+/* Left Side Styles */
+.left-side1 {
+  background-color: #8b0000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* Form Styles */
+.form-container {
+  background-color: white; /* Ganti warna latar belakang menjadi merah tua */
+  color: black;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  left: 0%;
+  max-width: 400px;
 }
-.checkbox {
-  width: 22px;
-  position: relative;
-  height: 22px;
-}
-.privacy-policy {
-  text-decoration: underline;
-  font-weight: 600;
-}
-.i-agree-to-container {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-}
-.i-agree-to-the-privacy-policy {
-  width: 226px;
-  position: relative;
-  height: 24px;
-}
-.checkbox-parent {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 13px;
-}
-.frame-parent {
-  position: absolute;
-  top: 156px;
-  left: 72px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 12px;
-}
-.sign-up1 {
-  position: relative;
-  font-weight: 500;
-}
-.sign-up-wrapper {
-  position: absolute;
-  top: 484px;
-  left: 131px;
-  border-radius: 28px;
-  background-color: #1c1c1c;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 110px;
-  opacity: 0.5;
-  color: #fafcfe;
-}
-.sign-up-parent {
-  position: absolute;
-  top: 219px;
-  left: 160px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
-  border-radius: 24px;
-  background-color: #fafcfe;
-  width: 544px;
-  height: 586px;
-  overflow: hidden;
-}
-.logo-icon {
-  width: 38.5px;
-  position: relative;
-  height: 43px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.logo-parent {
-  position: absolute;
-  top: 50px;
-  left: 160px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  gap: 10px;
-  font-size: 24px;
-  color: #fafcfe;
-}
-.create-a-new {
-  width: 312px;
-  position: relative;
-  font-weight: 600;
-  display: inline-block;
-}
-.button {
-  border-radius: 28px;
-  border: 1px solid #1c1c1c;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 70px;
-  text-align: left;
-  font-size: 16px;
-}
-.create-a-new-account-parent {
-  position: absolute;
-  top: calc(50% - 175px);
-  left: 961px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 14px;
+
+.form-container h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
   text-align: center;
-  font-size: 64px;
+  color: #000;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input[type="text"] {
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.form-group label {
+  font-size: 14px;
+}
+
+.form-group .privacy-policy {
+  color: #8b0000;
+  text-decoration: underline;
+}
+
+/* Button Styles */
+.next_login {
+  width: 100%;
+  padding: 10px;
+  background-color: #8b0000;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+/* Right Side Styles */
+.right-side1 {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.right-side1 h2 {
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 50px;
+}
+
+.right-side1 .submit {
+  color: #666;
+  border-radius: 28px;
+  border: 1px solid #666;
+  padding: 10px 20px;
+  cursor: pointer;
 }
